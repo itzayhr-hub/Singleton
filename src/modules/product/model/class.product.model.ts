@@ -1,6 +1,6 @@
 import { BaseModel } from "../../../components";
 
-class ProductModel extends BaseModel {
+export default class ProductModel extends BaseModel {
 	protected static tableName = "productos";
 	protected static idIdentityName = "id_product";
 
@@ -19,5 +19,3 @@ class ProductModel extends BaseModel {
 		return await this.getAll("", 0, 10, `${this.idIdentityName} ASC`);
 	}
 }
-
-export default ProductModel;

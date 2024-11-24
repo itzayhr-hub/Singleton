@@ -1,6 +1,6 @@
 import mysql, { Pool } from "mysql2/promise"; // Usamos la versión de promesas
 
-class DB {
+export default class DB {
 	private static instance: DB;
 	private pool: Pool;
 
@@ -29,5 +29,3 @@ class DB {
 		return rows as any[]; // Garantizamos que retorna un arreglo
 	}
 }
-
-export default DB;

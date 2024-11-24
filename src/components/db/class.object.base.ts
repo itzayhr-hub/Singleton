@@ -2,7 +2,7 @@
  * Clase base para representar objetos de base de datos.
  * Las clases hijas deben definir `tableName`, `idIdentityName` y `columns`.
  */
-abstract class BaseObject {
+export default abstract class BaseObject {
 	protected static tableName: string;
 	protected static idIdentityName: string;
 	protected static columns: string[] = [];
@@ -158,5 +158,3 @@ abstract class BaseObject {
 		return result.affectedRows > 0;
 	}
 }
-
-export default BaseObject;

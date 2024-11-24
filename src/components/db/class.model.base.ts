@@ -1,4 +1,4 @@
-abstract class BaseModel {
+export default abstract class BaseModel {
 	protected static tableName: string;
 	protected static idIdentityName: string;
 	protected static columns: string[] = [];
@@ -118,5 +118,3 @@ abstract class BaseModel {
 		return true;
 	}
 }
-
-export default BaseModel;

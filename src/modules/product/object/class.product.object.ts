@@ -1,7 +1,7 @@
-import ProductModel from "../model/class.product.model";
 import { BaseObject } from "../../../components";
+import ProductModel from "../model/class.product.model";
 
-class ProductObject extends BaseObject {
+export default class ProductObject extends BaseObject {
 	protected static tableName = "productos";
 	protected static idIdentityName = "id_product";
 	protected static model = ProductModel;
@@ -38,5 +38,3 @@ class ProductObject extends BaseObject {
 		return { products, total };
 	}
 }
-
-export default ProductObject;

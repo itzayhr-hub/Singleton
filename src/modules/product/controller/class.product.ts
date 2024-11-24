@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-class ProductController {
+export default class ProductController {
 	public static async getProductById(request: Request, response: Response): Promise<void> {
 		try {
 			const { id_product } = request.query;
@@ -69,5 +69,3 @@ class ProductController {
 		}
 	}
 }
-
-export default ProductController;
